@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ooredoo - Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Ooredoo</h1> 
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </nav>
+  </header>
+
+  <section class="login-section">
+    <h2>Login</h2>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" 
+      required pattern=".+@.+\.com" 
+      title="Please enter a valid email ending with .com">
+
+      
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required
+               pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
+               title="Password must be at least 8 characters, include at least one uppercase letter and one number">
+        
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="switch-link">
+      <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 10;
+  }
+  header {
+    background-color: #ED1B2F;
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header img {
+    height: 50px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:visited {
+    color: white;
+  }
+  
+  nav a:hover {
+    color: #ffdcdc; 
+  }
+  
+  nav a:active {
+    color: white;
+  }
+  nav {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-emphasis-color: white;
+    font-weight: bold;
+  }
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+  }
+  .hero {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  .form-section {
+    padding: 30px 20px;
+    max-width: 700px;
+    margin: auto;
+  }
+  form {
+    display: flex; 
+    flex-direction: column;
+  }
+  label {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  input, select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .radio-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 600px) {
+    .radio-group {
+      flex-direction: column;
+    }
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #cc0000;
+  }
+  .faq-section {
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    .faq-section h2 {
+      margin-bottom: 15px;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+    }
+    .contact-section {
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    .login-section {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .login-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #e60000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #cc0000;
+    }
+    .switch-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .switch-link a {
+      color: #e60000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .signup-section {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .signup-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #e60000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #cc0000;
+    }
+    .switch-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .switch-link a {
+      color: #e60000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        gap: 20px;
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+
+      

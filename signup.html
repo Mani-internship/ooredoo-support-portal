@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ooredoo - Signup</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Ooredoo</h1> 
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </nav>
+  </header>
+
+  <section class="signup-section">
+    <h2>Signup</h2>
+    <form>
+        <label for="signup-name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="30"
+               pattern="[A-Za-z\s]+" required
+               oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'');"
+               title="Only letters and spaces are allowed (no numbers)">
+    
+
+      <label for="signup-email">Email:</label>
+      <input type="email" id="email" name="email" 
+      required pattern=".+@.+\.com" 
+      title="Please enter a valid email ending with .com">
+
+      
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" name="signup-password" required
+               pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
+               title="Password must be at least 8 characters, include at least one uppercase letter and one number">
+       
+
+      <button type="submit">Create Account</button>
+    </form>
+
+    <div class="switch-link">
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </section>
+
+</body>
+</html>
