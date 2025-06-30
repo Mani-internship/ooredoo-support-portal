@@ -23,15 +23,12 @@
     <h2>Login</h2>
     <form>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" 
-      required pattern=".+@.+\.com" 
-      title="Please enter a valid email ending with .com">
+      <input type="email" id="email" name="email"/>
+      
 
       
         <label for="login-password">Password:</label>
-        <input type="password" id="login-password" name="login-password" required
-               pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
-               title="Password must be at least 8 characters, include at least one uppercase letter and one number">
+        <input type="password" id="login-password" name="login-password" required /> 
         
 
       <button type="submit">Login</button>
