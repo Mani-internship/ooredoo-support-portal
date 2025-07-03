@@ -13,6 +13,10 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  .logo {
+  height: 50px;
+  vertical-align: middle;
+}
   header img {
     height: 50px;
   }
