@@ -223,23 +223,26 @@ body {
         padding: 20px;
         background-color: #f8f8f8;
     }
-    .phone-wrapper {
+   .phone-wrapper {
   display: flex;
   gap: 8px;
-  align-items: center;
+  align-items: stretch; /* Makes both inputs the same height */
+}
+
+.phone-wrapper select,
+.phone-wrapper input[type="tel"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 42px; /* Ensures uniform height */
+  box-sizing: border-box;
 }
 
 .phone-wrapper select {
-  width: 100px;
-  padding: 8px;
-  font-size: 1em;
+  width: 110px;
 }
 
-.phone-wrapper input {
-  flex: 1;
-  padding: 8px;
-  font-size: 1em;
-}
 
 
       
