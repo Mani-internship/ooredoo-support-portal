@@ -229,6 +229,12 @@ body {
   align-items: stretch; /* Makes both inputs the same height */
 }
 
+.phone-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: stretch; /* Makes both inputs the same height */
+}
+
 .phone-wrapper select,
 .phone-wrapper input[type="tel"] {
   padding: 10px;
@@ -242,6 +248,7 @@ body {
 .phone-wrapper select {
   width: 110px;
 }
+
 
 
 
