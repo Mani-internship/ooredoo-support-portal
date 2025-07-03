@@ -235,19 +235,7 @@ body {
   align-items: stretch; /* Makes both inputs the same height */
 }
 
-.phone-wrapper select,
-.phone-wrapper input[type="tel"] {
-  padding: 10px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  height: 42px; /* Ensures uniform height */
-  box-sizing: border-box;
-}
 
-.phone-wrapper select {
-  width: 110px;
-}
 
 
 
