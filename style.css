@@ -17,9 +17,10 @@ body {
   height: 50px;
   vertical-align: middle;
 }
-  header img {
+ 
+   header img {
     height: 50px;
-  }
+   }
   nav a {
     color: white;
     text-decoration: none;
