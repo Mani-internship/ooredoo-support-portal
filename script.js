@@ -42,9 +42,31 @@ document.addEventListener("DOMContentLoaded", function () {
       showError(radioGroup, "Please select a priority.");
     }
 
-    if (isValid) {
+   if (isValid) {
+  const data = {
+    name: name.value.trim(),
+    email: email.value.trim(),
+    phone: phone.value.trim(),
+    serviceType: document.getElementById("serviceType").value.trim(),
+    issueDescription: description.value.trim(),
+    priority: priority.value
+  };
+
+  fetch('https://support-ticket-api-dqqe.onrender.com/api/tickets', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(response => {
+    if (response.ok) {
       alert("Thank you! Your support ticket has been submitted.");
       form.reset();
+    } else {
+      alert("Sorry, there was an error submitting your ticket.");
     }
+  })
+  .catch(() => alert("Network error. Please try again later."));
+}
+
   });
 });
