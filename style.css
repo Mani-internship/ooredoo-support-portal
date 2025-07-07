@@ -228,31 +228,20 @@ body {
         padding: 20px;
         background-color: #f8f8f8;
     }
-   .phone-wrapper {
+  .phone-wrapper {
   display: flex;
   gap: 8px;
-  align-items: stretch; /* Makes both inputs the same height */
-}
-
-.phone-wrapper {
-  display: flex;
-  gap: 8px;
-  align-items: stretch; /* Makes both inputs the same height */
 }
 
 .phone-wrapper select,
-.phone-wrapper input[type="tel"] {
-  padding: 10px;
-  font-size: 1em;
+.phone-wrapper input {
+  height: 40px;
+  font-size: 1rem;
+  padding: 0 8px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  height: 42px; /* Ensures uniform height */
-  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-.phone-wrapper select {
-  width: 110px;
-}
 
 
 
