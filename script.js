@@ -42,15 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
       showError(radioGroup, "Please select a priority.");
     }
 
-    // Safely get serviceType value if it exists, else empty string
     let serviceTypeInput = document.getElementById("serviceType");
     let serviceTypeValue = serviceTypeInput ? serviceTypeInput.value.trim() : "";
 
     if (serviceTypeValue === "") {
       if (serviceTypeInput) {
         showError(serviceTypeInput, "Service Type is required.");
-      } else {
-        // Optionally handle missing serviceType field if needed
       }
     }
 
@@ -58,15 +55,17 @@ document.addEventListener("DOMContentLoaded", function () {
       const countryCode = document.getElementById("countryCode").value.trim();
       const phoneNumber = phone.value.trim();
       const fullPhone = countryCode + phoneNumber;
-      const data = {
-  name: name.value.trim(),
-  email: email.value.trim(),
-  phone: fullPhone, // 👈 now includes +960 or selected code
-  serviceType: serviceTypeValue,
-  issueDescription: description.value.trim(),
-  priority: priority.value
-};
 
+      console.log("Sending phone:", fullPhone); // Debug log
+
+      const data = {
+        name: name.value.trim(),
+        email: email.value.trim(),
+        phone: fullPhone,
+        serviceType: serviceTypeValue,
+        issueDescription: description.value.trim(),
+        priority: priority.value
+      };
 
       fetch('https://support-ticket-api-dqqe.onrender.com/api/tickets', {
         method: 'POST',
