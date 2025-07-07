@@ -55,14 +55,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (isValid) {
+      const countryCode = document.getElementById("countryCode").value.trim();
+      const phoneNumber = phone.value.trim();
+      const fullPhone = countryCode + phoneNumber;
       const data = {
-        name: name.value.trim(),
-        email: email.value.trim(),
-        phone: phone.value.trim(),
-        serviceType: serviceTypeValue,
-        issueDescription: description.value.trim(),
-        priority: priority.value
-      };
+  name: name.value.trim(),
+  email: email.value.trim(),
+  phone: fullPhone, // 👈 now includes +960 or selected code
+  serviceType: serviceTypeValue,
+  issueDescription: description.value.trim(),
+  priority: priority.value
+};
+
 
       fetch('https://support-ticket-api-dqqe.onrender.com/api/tickets', {
         method: 'POST',
