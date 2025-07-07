@@ -51,12 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
     issueDescription: description.value.trim(),
     priority: priority.value
   };
-
-  fetch('https://support-ticket-api-dqqe.onrender.com/api/tickets', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-  })
+   fetch('https://support-ticket-api-dqqe.onrender.com/api/tickets', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(data)
+}) 
   .then(response => {
     if (response.ok) {
       alert("Thank you! Your support ticket has been submitted.");
