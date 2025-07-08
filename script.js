@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         email: email.value.trim(),
         phone: fullPhone,
         serviceType: serviceTypeValue,
-        issueDescription: description.value.trim(),
+        issueDescription: issueDescription.value.trim(), // ✅ Fixed
         priority: priority.value
       };
 
