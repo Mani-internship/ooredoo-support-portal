@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
       showError(phone, "Enter a valid phone number (4-15 digits)");
     }
 
-    const description = document.getElementById("description");
-    if (description.value.trim() === "") {
-      showError(description, "Please enter a description.");
+    const issueDescription = document.getElementById("issueDescription");
+    if (issueDescription.value.trim() === "") {
+      showError(issueDescription, "Please enter a description.");
     }
 
     const priority = document.querySelector('input[name="priority"]:checked');
