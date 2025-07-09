@@ -39,7 +39,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      fetch('https://support-ticket-api-dqqe.onrender.com')
+      fetch('https://support-ticket-api-dqqe.onrender.com/api/tickets')
         .then(response => response.json())
         .then(tickets => {
           const tbody = document.querySelector("#tickets-table tbody");
