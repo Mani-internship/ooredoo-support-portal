@@ -8,7 +8,7 @@
 </head>
 <body class="admin-body">
   <div class="admin-container">
-    <h1>Submitted Tickets</h1>
+    <h1>📋 Support Tickets Dashboard</h1>
     <table class="admin-table" id="tickets-table">
       <thead>
         <tr>
@@ -16,12 +16,10 @@
           <th>Service Type</th>
           <th>Priority</th>
           <th>Issue Description</th>
-          <th>Created At</th>
+          <th>Submitted At</th>
         </tr>
       </thead>
-      <tbody>
-        <!-- Ticket rows will be injected here -->
-      </tbody>
+      <tbody></tbody>
     </table>
   </div>
 
@@ -36,7 +34,7 @@
             row.innerHTML = `
               <td>${ticket.name}</td>
               <td>${ticket.serviceType}</td>
-              <td>${ticket.priority}</td>
+              <td><span class="pill pill-${ticket.priority.toLowerCase()}">${ticket.priority}</span></td>
               <td>${ticket.issueDescription || '-'}</td>
               <td>${new Date(ticket.createdAt).toLocaleString()}</td>
             `;
