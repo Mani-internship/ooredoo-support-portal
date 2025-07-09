@@ -241,6 +241,15 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.admin-body {
+  background: linear-gradient(135deg, #e0f7fa, #e0f2f1);
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .admin-container {
   background: white;
   padding: 30px 40px;
@@ -248,7 +257,6 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   width: 100%;
   max-width: 1000px;
-  margin: 40px auto;
 }
 
 .admin-container h1 {
@@ -257,28 +265,28 @@ body {
   margin-bottom: 30px;
 }
 
-.admin-container table {
+.admin-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
 
-.admin-container th,
-.admin-container td {
+.admin-table th,
+.admin-table td {
   border: 1px solid #ccc;
   padding: 10px 14px;
   text-align: left;
 }
 
-.admin-container th {
+.admin-table th {
   background-color: #009688;
   color: white;
 }
 
-.admin-container tr:nth-child(even) {
+.admin-table tr:nth-child(even) {
   background-color: #f5f5f5;
 }
 
-.admin-container tr:hover {
+.admin-table tr:hover {
   background-color: #e0f2f1;
 }

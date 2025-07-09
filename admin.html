@@ -1,27 +1,29 @@
-<!-- admin.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin Panel - Support Tickets</title>
-  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
-<body>
-  <h1>Submitted Tickets</h1>
-  <table id="tickets-table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Service Type</th>
-        <th>Priority</th>
-        <th>Created At</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Ticket rows will go here -->
-    </tbody>
-  </table>
+<body class="admin-body">
+  <div class="admin-container">
+    <h1>Submitted Tickets</h1>
+    <table class="admin-table" id="tickets-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Service Type</th>
+          <th>Priority</th>
+          <th>Issue Description</th>
+          <th>Created At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Ticket rows will be injected here -->
+      </tbody>
+    </table>
+  </div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -35,6 +37,7 @@
               <td>${ticket.name}</td>
               <td>${ticket.serviceType}</td>
               <td>${ticket.priority}</td>
+              <td>${ticket.issueDescription || '-'}</td>
               <td>${new Date(ticket.createdAt).toLocaleString()}</td>
             `;
             tbody.appendChild(row);
